@@ -1,3 +1,8 @@
-RewriteEngine on
-RewriteCond $1 !^(index\.php|static|robots\.txt)
-RewriteRule ^(.*)$ /index.php/$1 [L]
+<IfModule mod_rewrite.c>
+	RewriteEngine on 
+	RewriteBase /codeangular/
+	RewriteCond $1 !^(index\.php|resources|robots\.txt)
+	RewriteCond %{REQUEST_FILENAME} !-f 
+	RewriteCond %{REQUEST_FILENAME} !-d 
+	RewriteRule ^(.*)$ index.php?/$1 [L]
+</IfModule>

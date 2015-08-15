@@ -38,7 +38,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="<?php echo site_url('projects#/'); ?>">AngularJS and CodeIgniter</a>
+          <a class="brand" href="<?php echo site_url('projects/'); ?>">AngularJS and CodeIgniter</a>
         </div>
       </div>
     </div>
